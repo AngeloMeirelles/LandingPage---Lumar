@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Jura:wght@300..700&family=Roboto+Condensed:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: black;
+}
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+    flex-wrap: wrap;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.cabecalho-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cabecalho-menu-item {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.principal-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.principal-contato-titulo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 64px;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #d9d9d9;
+    padding: 60px 40px;
+    border-radius: 40px;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.principal-contato-item1,
+.principal-contato-item2 {
+    font-family: "Jura", sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.boxEmail {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+
+.boxMensagem {
+    width: 100%;
+    height: 200px;
+    padding: 16px;
+    border-radius: 30px;
+    font-size: 16px;
+    resize: none;
+    border: none;
+}
+
+.botaoEnviar {
+    align-self: center;
+    width: 120px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 280px;
+}
+
+.botaoEnviar:hover {
+    background-color: #333;
+}
+
+
+.decoracao-contato {
+    position: relative;
+    bottom: 50px;
+    left: -180px;
+    z-index: -1;
+    width: 500px;
+    margin-top: -20px;
+}
+
+
+dialog {
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px white;
+    background-color: #d9d9d9;
+    padding: 20px;
+}
+
+dialog .ajuste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-text {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.close {
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    background-color: #1B1212;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+
+.rodape {
+    position: relative;
+    margin-top: 200px;
+}
+
+.rodape-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+
+.rodape-esquerda{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-right: 1000px;
+    margin-top: -120px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-direita{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left: 1000px;
+    margin-top: -170px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-titulo {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-menu-item {
+    z-index: 1;
+}
+
+
+.rodape-fundo {
+    margin-top: -177px;
+    z-index: 0;
+}
+
+
+@media (max-width: 768px) {
+    
+    .cotainer-botaoEnviar {
+        display: flex;
+        align-content: center;
+        margin-left: 105px;
+    }
+    
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .principal-contato-titulo {
+        font-size: 40px;
+    }
+
+    .formulario {
+        padding: 30px 20px;
+    }
+
+    .decoracao-contato {
+        width: 70px;
+        left: 20px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .rodape-logo {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .rodape-esquerda,
+    .rodape-direita {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .rodape-fundo {
+        display: none;
+    }
+
+        .decoracao-contato, .fundo-contato {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .principal-contato-titulo {
+        font-size: 32px;
+    }
+
+    .modal-text {
+        font-size: 16px;
+    }
+
+    .close {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    .rodape-logo {
+        font-size: 24px;
+    }
+
+    .rodape-titulo {
+        font-size: 14px;
+    }
+}

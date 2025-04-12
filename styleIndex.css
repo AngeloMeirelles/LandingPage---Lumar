@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-logo {
+    font-family: "Jura", sans-serif;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cabecalho-menu-item {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.conteudo-principal {
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1000px;
+    margin-top: 300px;
+    gap: 5px;
+    color: white;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-size: 64px;
+    
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-size: 20px;
+    
+}
+
+.rodape {
+    position: relative;
+    margin-top: 478px;
+    bottom: 0;
+}
+
+.rodape-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+.rodape-esquerda{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-right: 1000px;
+    margin-top: -120px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-direita{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left: 1000px;
+    margin-top: -170px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-titulo {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-menu-item {
+    z-index: 1;
+}
+
+
+.rodape-fundo {
+    margin-top: -177px;
+    z-index: 0;
+}
+
+.slider{
+    position: relative;
+    
+}
+
+.slider .slider-container .slider-box {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.slider-container .slider-box.ativo {
+    opacity: 1;
+    z-index: 1111;
+}
+
+.setas {
+    width: 100%;
+    height: 100%;
+    padding: 0 1%;
+    z-index: 1112;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    margin-top: 157px;
+    gap: 820px;
+    justify-content: flex-start;
+}
+
+.setas button {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.8s;
+}
+
+.setas button:hover {
+    background-color: rgb(66, 54, 54);
+}
+
+.btn-nav-box {
+    position: absolute;
+    left: 350px;
+    bottom: -360px;
+    z-index: 7777;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.btn-nav-box .btn-nav {
+    width: 30px;
+    height: 10px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.btn-nav:hover {
+    background-color: white;
+}
+
+.btn-nav-box .btn-nav.ativo{
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .slider-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider-box img.conteudo-principal-escrito-imagem {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    .conteudo-principal {
+        margin: 40px 20px 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -130px;
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-size: 24px;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: -50px;
+        padding: 30px 20px;
+    }
+
+    .rodape-logo {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .rodape-esquerda,
+    .rodape-direita {
+        margin: 0;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .rodape-titulo {
+        font-size: 16px;
+    }
+
+    .rodape-menu-item {
+        font-size: 14px;
+    }
+
+    .rodape-fundo {
+        display: none;
+    }
+
+
+    .btn-nav-box {
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .conteudo-principal-escrito-titulo {
+        font-size: 20px;
+    }
+
+    .conteudo-principal-escrito-subtitulo {
+        font-size: 12px;
+    }
+
+    .rodape-logo {
+        font-size: 24px;
+    }
+
+    .rodape-titulo {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .slider-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+        margin-left: 75px;
+        margin-top: 20%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slider-box img.conteudo-principal-escrito-imagem {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+
+    .setas {
+        padding: 0 5%;
+        gap: 0;
+        margin-top: -30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .setas button {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .btn-nav-box {
+        margin-top: 10px;
+        position: static;
+        transform: none;
+    }
+}
+
+

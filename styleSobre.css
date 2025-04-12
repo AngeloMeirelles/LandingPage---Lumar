@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: black;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+    flex-wrap: wrap;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.cabecalho-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cabecalho-menu-item {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.tudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 60px;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.coroa {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.sobre-descricao {
+    font-family: "Work Sans", sans-serif;
+    color: white;
+    font-size: 20px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.adereco {
+    position: relative;
+}
+
+.retangulo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.retangulo-logo {
+    font-family: "Jura", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.rodape {
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+.rodape-logo {
+    font-family: "Jura", sans-serif;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.rodape-esquerda,
+.rodape-direita {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    z-index: 1;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+.rodape-titulo {
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.rodape-menu-item {
+    z-index: 1;
+}
+
+.rodape-fundo {
+    margin-top: -177px;
+    z-index: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .cabecalho-logo {
+        font-size: 36px;
+    }
+
+    .cabecalho-menu {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .principal {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .sobre-descricao {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .retangulo-logo {
+        font-size: 36px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        text-align: center;
+        margin-top: -70px;
+    }
+
+    .rodape-logo {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .rodape-esquerda,
+    .rodape-direita {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .rodape-fundo {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-descricao {
+        font-size: 16px;
+    }
+
+    .retangulo-logo {
+        font-size: 28px;
+    }
+
+    .rodape-logo {
+        font-size: 24px;
+    }
+
+    .rodape-titulo {
+        font-size: 14px;
+    }
+}
